@@ -13,5 +13,5 @@ if [ ! -s $1/dudewtf.txt ]; then
   exit 1
 else
   echo "dudewtf.txt is not empty, here are the contents" | indent
-  cat $1/hello.txt
+  cat $1/dudewtf.txt
 fi | indent
