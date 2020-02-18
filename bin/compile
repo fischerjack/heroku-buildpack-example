@@ -10,7 +10,7 @@ echo "-----> Found a dudewtf.txt"
 #if dudewtf.txt is empty, abort the build
 if [ ! -s $1/dudewtf.txt ]; then
   echo "dudewtf.txt was empty" | indent
-  exit 1;
+  exit 1
 fi
 
 
