@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#this buildpack is valid for apps with a dudewtf.txt in the root
+if [ -f $1/dudewtf.txt ]; then
+  echo "DudewtfFramework";
+  exit 0
+else
+  exit 1
+fi
