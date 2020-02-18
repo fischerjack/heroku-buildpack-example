@@ -9,9 +9,9 @@ echo "-----> Found a dudewtf.txt"
 
 #if dudewtf.txt is empty, abort the build
 if [ ! -s $1/dudewtf.txt ]; then
-  echo "dudewtf.txt was empty" | indent
+  echo "dudewtf.txt was empty"
   exit 1
-fi
-
-
-cat $1/dudewtf.txt | sed -e "s/[Dd]udewtf/Btchwtf/g" > $1/btchwtf.txt
+else
+  echo "dudewtf.txt is not empty, here are the contents" | indent
+  cat $1/hello.txt
+fi | indent
